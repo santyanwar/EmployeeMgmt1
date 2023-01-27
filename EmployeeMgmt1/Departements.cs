@@ -39,7 +39,7 @@ namespace EmployeeMgmt1
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "insert into Department1 values ('{0}')";
-                    Query = string.Format(DepNameTb.Text);
+                    Query = string.Format(Query,DepNameTb.Text);
                     con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Added !!!");
@@ -52,4 +52,10 @@ namespace EmployeeMgmt1
             }
         }
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+        }
+
+    }
 }
