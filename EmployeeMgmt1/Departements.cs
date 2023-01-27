@@ -13,7 +13,12 @@ namespace EmployeeMgmt1
 {
     public partial class Departements : Form
     {
-        
-        
+        Functions con;
+        public Departements()
+        {
+
+        }
+
+
     }
 }
