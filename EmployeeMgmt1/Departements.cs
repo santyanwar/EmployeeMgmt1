@@ -27,6 +27,6 @@ namespace EmployeeMgmt1
             String Query = "Select * from DepartmentTb1";
             DepList.DataSource = con.GetData(Query);
         }
-
+        private void AddBtn_Click(object sender, EventArgs e)
     }
 }
