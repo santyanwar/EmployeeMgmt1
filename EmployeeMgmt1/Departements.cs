@@ -13,46 +13,7 @@ namespace EmployeeMgmt1
 {
     public partial class Departements : Form
     {
-        Functions con;
-        public Departements()
-        {
-            InitializeComponent();
-            con = new Functions();
-            ShowDepartments();
-
-
-
-        }
-        private void ShowDepartments()
-        {
-            String Query = "Select * from DepartmentTb1";
-            DepList.DataSource = con.GetData(Query);
-        }
-        private void AddBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if(DepNameTb.Text == "")
-                {
-                    MessageBox.Show("Missing Data|||");
-                }else
-                {
-                    string Dep = DepNameTb.Text;
-                    string Query = "insert into Department1 values ('{0}')" ;
-                    Query = string.Format(DepNameTb.Text);
-                    con.SetData(Query);
-                    ShowDepartments();
-                    MessageBox.Show("Department Added !!!");
-                    DepNameTb.Text = "";
-                }
-            } 
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message);
-            }
-        }
         
-             
-
+        
     }
 }
