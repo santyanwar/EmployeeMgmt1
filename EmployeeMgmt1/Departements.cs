@@ -43,7 +43,7 @@ namespace EmployeeMgmt1
                     con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Added !!!");
-
+                    DepNameTb.Text = "";
                 }
             }
     }
