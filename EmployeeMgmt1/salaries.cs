@@ -26,5 +26,10 @@ namespace EmployeeMgmt1
         {
 
         }
+
+        private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -29,6 +29,12 @@ namespace EmployeeMgmt1
             sda = Fill(dt);
             return dt;
         }
+
+        private SqlDataAdapter Fill(DataTable dt)
+        {
+            throw new NotImplementedException();
+        }
+
         public int SetData(String Query)
         {
             int cnt = 0;
