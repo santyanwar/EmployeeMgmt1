@@ -41,6 +41,8 @@ namespace EmployeeMgmt1
                     string Query = "insert into Department1 values ('{0}')";
                     Query = string.Format(DepNameTb.Text);
                     con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Added !!!");
 
                 }
             }
