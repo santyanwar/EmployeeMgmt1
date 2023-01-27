@@ -36,7 +36,11 @@ namespace EmployeeMgmt1
                     MessageBox.Show("Missing Data|||");
                 }
                 else
-                
-        }
+                {
+                    string Dep = DepNameTb.Text;
+                    string Query = "insert into Department1 values ('{0}')";
+
+                }
+            }
     }
 }
