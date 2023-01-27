@@ -28,5 +28,15 @@ namespace EmployeeMgmt1
             DepList.DataSource = con.GetData(Query);
         }
         private void AddBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data|||");
+                }
+                else
+                
+        }
     }
 }
